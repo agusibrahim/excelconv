@@ -104,8 +104,8 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 	} else {
 		// Panggil implementasi libxls
 		rawRows, readErr = readXLS(filename)
-		log.Println("Read XLS:", readErr)
-		log.Println("Read XLS:", rawRows)
+		// log.Println("Read XLS:", readErr)
+		// log.Println("Read XLS:", rawRows)
 	}
 
 	if readErr != nil {
