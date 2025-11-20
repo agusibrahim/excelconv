@@ -1,11 +1,11 @@
-version: '3.8'
+version: "3.8"
 
 services:
   app:
     build: .
     container_name: excel-go-app
-    ports:
-      - "3020:3020"
+    # ports:
+    #   - "3020:3020"
     restart: always
     # Opsional: Limits resource agar container tidak memakan semua RAM jika file excel raksasa
     #deploy:
